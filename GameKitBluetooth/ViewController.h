@@ -9,5 +9,15 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UITextView *textView;
+@property (weak, nonatomic) IBOutlet UITextField *sendTextView;
+@property (weak, nonatomic) IBOutlet UIButton *sendButton;
+@property (weak, nonatomic) IBOutlet UIButton *connectButton;
+@property (weak, nonatomic) IBOutlet UIButton *disconnectButton;
+- (IBAction)tapSendButton:(id)sender;
+- (IBAction)tapConnectButton:(id)sender;
+- (IBAction)tapDisonnectButton:(id)sender;
+
+
 
 @end

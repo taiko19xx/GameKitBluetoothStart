@@ -8,11 +8,18 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () {
+    GKSession *currentSession;
+}
 
 @end
 
 @implementation ViewController
+@synthesize textView;
+@synthesize sendTextView;
+@synthesize sendButton;
+@synthesize connectButton;
+@synthesize disconnectButton;
 
 - (void)viewDidLoad
 {
@@ -22,6 +29,11 @@
 
 - (void)viewDidUnload
 {
+    [self setTextView:nil];
+    [self setSendTextView:nil];
+    [self setSendButton:nil];
+    [self setConnectButton:nil];
+    [self setDisconnectButton:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -31,4 +43,12 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+- (IBAction)tapSendButton:(id)sender {
+}
+
+- (IBAction)tapConnectButton:(id)sender {
+}
+
+- (IBAction)tapDisonnectButton:(id)sender {
+}
 @end
